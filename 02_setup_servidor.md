@@ -47,4 +47,3 @@ Durante la transferencia, fue crucial habilitar la opción **"Mostrar archivos o
 * `.gitignore` (Configuración de Git).
 
 ---
-_Siguiente paso: Ver cómo automatizamos el encendido para que el servidor sea "inmortal" en [03_gestion_procesos.md](./03_gestion_procesos.md)._
