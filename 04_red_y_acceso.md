@@ -45,4 +45,4 @@ Una ventaja crítica de esta configuración es que **Ngrok gestiona automáticam
 Al usar el plan gratuito, Ngrok añade una capa de seguridad extra: una página de advertencia ("Visit Site") en la primera visita. Esto protege contra phishing, alertando al usuario de que está accediendo a un servidor personal.
 
 ---
-_Siguiente paso: Cómo administramos todo esto desde el móvil sin estar en casa en [05_administracion_remota.md](./05_administracion_remota.md)._
+
