@@ -18,15 +18,15 @@ El objetivo es transformar una **Raspberry Pi 5** en una consola servidor "inmor
 El sistema funciona con una arquitectura de **"Cartucho Único"** sobre el puerto 5000, expuesto a internet mediante un túnel seguro.
 
 ```mermaid
-graph TD;
-    Usuario_Internet[📱 Jugador (Internet)] -->|HTTPS| Ngrok_Tunnel;
-    Ngrok_Tunnel[☁️ Ngrok (Dominio Fijo)] -->|Puerto 5000| Raspberry_Pi;
+graph TD
+    Usuario_Internet["📱 Jugador (Internet)"] -->|"HTTPS"| Ngrok_Tunnel
+    Ngrok_Tunnel["☁️ Ngrok (Dominio Fijo)"] -->|"Puerto 5000"| Raspberry_Pi
     
-    subgraph Raspberry Pi 5
-        PM2_Gestor[⚙️ PM2 Process Manager]
-        PM2_Gestor -->|Mantiene vivo| Juego_Node[👾 Juego Node.js (Puerto 5000)];
-        PM2_Gestor -->|Mantiene vivo| Tunel_Ngrok[🚇 Túnel Ngrok];
+    subgraph Raspberry_Pi ["Raspberry Pi 5"]
+        PM2_Gestor["⚙️ PM2 Process Manager"]
+        PM2_Gestor -->|"Mantiene vivo"| Juego_Node["👾 Juego Node.js (Puerto 5000)"]
+        PM2_Gestor -->|"Mantiene vivo"| Tunel_Ngrok["🚇 Túnel Ngrok"]
     end
     
-    Admin_Movil[📲 Admin (Móvil/Termius)] -.->|VPN Segura| Tailscale;
-    Tailscale[🔒 Tailscale VPN] -.->|SSH| Raspberry_Pi;
+    Admin_Movil["📲 Admin (Móvil/Termius)"] -.->|"VPN Segura"| Tailscale
+    Tailscale["🔒 Tailscale VPN"] -.->|"SSH"| Raspberry_Pi
