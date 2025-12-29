@@ -24,6 +24,7 @@ La estructura organizada en la Raspberry Pi (`/home/pi/juegos/impostor`) sigue e
        ├── index.ts          # Punto de entrada del servidor
        ├── package.json      # "Lista de la compra" de dependencias
        └── vite.config.ts    # Configuración del empaquetador
+```
 
 ## ⚙️ Funcionamiento del Servidor (Backend)
 
